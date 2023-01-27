@@ -10,10 +10,10 @@ public class AdivinaNumero {
         int intentos=0;
         do{
             boolean leido;
-        }
+        
         do{
             System.out.println("Introduce un numero entre 1 y 500");
-        }
+        
         try{
             intentos++;
             numero=teclado.nextInt();
@@ -23,14 +23,14 @@ public class AdivinaNumero {
             System.out.println("No ha introducido un numero entero");
             teclado.next();
             leido=false;
-        }
+        }}
         while(leido==false);
         if (numero>numeroAdivinar){
             System.out.println("El numero es menor. Sigue intentandolo");
         }
         if (numero<numeroAdivinar){
             System.out.println("El numero es mayor. Sigue intentandolo");
-        }
+        }}
         while (numero!=numeroAdivinar);
         System.out.println("Felicidades has acertado el numero es "+ numeroAdivinar);
         System.out.println("El numero de intentos que has necesito son "+intentos);
